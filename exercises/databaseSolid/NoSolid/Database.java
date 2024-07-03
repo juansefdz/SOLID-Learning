@@ -12,5 +12,6 @@ public class DataBase {
     public void saveData(String data) {
         database.save(data);
     }
+    
 } 
 
