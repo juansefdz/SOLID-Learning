@@ -1,4 +1,5 @@
-package exercises.TaxCalculator.NoSolid;
+package NoSolid;
+
 
 public class TaxCalculator {
     public double calculateTax(String country) {
