@@ -49,7 +49,9 @@ Este principio establece que los módulos de alto nivel no deben depender de mó
 ## Ejercicios
 ### 1. Ordenes
 `
+
 public class Order {
+    
     private List<String> items;
     private double totalAmount;
 
@@ -77,17 +79,16 @@ Refactoriza la clase Order para que cumpla con el Principio de Responsabilidad �
 Pistas:
 
 - La clase Order solo debe gestionar los datos de la orden.
--     Crea una nueva clase para manejar la impresión de la orden.
--     Crea una nueva clase para manejar el almacenamiento de la orden en la base de datos.
+- Crea una nueva clase para manejar la impresión de la orden.
+- Crea una nueva clase para manejar el almacenamiento de la orden en la base de datos.
 
 ###2. Métodos de pago
 
 Refactoriza el código para que cumpla con el Principio de Abierto/Cerrado. Debes permitir la extensión de nuevos métodos de pago sin modificar la clase PaymentProcessor.
 `
- public class PaymentProcessor {
+public class PaymentProcessor {
 
-
-public class HumanWorker implements Worker {
+    public class HumanWorker implements Worker {
     @Override
     public void work() {
         // Lógica para trabajar
@@ -100,6 +101,7 @@ public class HumanWorker implements Worker {
 }
 
 public class RobotWorker implements Worker {
+    
     @Override
     public void work() {
         // Lógica para trabajar
@@ -114,20 +116,22 @@ public class RobotWorker implements Worker {
 #####Pistas
 
    - Crea una interfaz Workable para la funcionalidad de trabajo.
-   -     Crea una interfaz Eatable para la funcionalidad de comer.
-   -     Implementa estas interfaces en las clases correspondientes.
+   - Crea una interfaz Eatable para la funcionalidad de comer.    
+   - Implementa estas interfaces en las clases correspondientes.
 
 ###4. Database
 
 Refactoriza el código para que cumpla con el Principio de Inversión de Dependencias. Introduce una abstracción para la funcionalidad de almacenamiento de datos.
 `
 public class Database {
+    
     public void save(String data) {
         // Lógica para guardar datos en la base de datos
     }
 }
 
 public class DataService {
+    
     private Database database = new Database();
 
     public void saveData(String data) {
@@ -168,10 +172,10 @@ public class Employee {
 
 #####Pistas
 
-  -  La clase Employee solo debe manejar los datos del empleado.
-  -     Crea una nueva clase PayrollService para manejar el cálculo del salario.
-  -     Crea una nueva clase EmployeeReport para manejar la generación del reporte.
-  -     Crea una nueva clase EmployeeRepository para manejar el almacenamiento en la base de datos.
+  - La clase Employee solo debe manejar los datos del empleado.
+  - Crea una nueva clase PayrollService para manejar el cálculo del salario.
+  - Crea una nueva clase EmployeeReport para manejar la generación del reporte.
+  - Crea una nueva clase EmployeeRepository para manejar el almacenamiento en la base de datos.
 
 ###6. TaxCalculator
 
@@ -192,7 +196,7 @@ public class TaxCalculator {
 
 ##### Pistas
 
- -   Crea una interfaz TaxStrategy con un método calculateTax.
- -     Implementa esta interfaz en clases concretas para cada país (por ejemplo, USATaxStrategy y UKTaxStrategy).
- -     Modifica TaxCalculator para que use la interfaz TaxStrategy.
+ - Crea una interfaz TaxStrategy con un método calculateTax.
+ - Implementa esta interfaz en clases concretas para cada país (por ejemplo, USATaxStrategy y UKTaxStrategy).
+ - Modifica TaxCalculator para que use la interfaz TaxStrategy.
 
