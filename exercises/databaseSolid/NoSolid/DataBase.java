@@ -5,7 +5,7 @@ public class Database {
         // Lógica para guardar datos en la base de datos
     }
 }
-/* 
+
 public class DataBase {
     private Database database = new Database();
 
@@ -14,4 +14,3 @@ public class DataBase {
     }
 } 
 
-*/
