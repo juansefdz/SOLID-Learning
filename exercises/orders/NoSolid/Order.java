@@ -1,12 +1,12 @@
-package exercises.orders;
+package exercises.orders.NoSolid;
 
 import java.util.List;
 
-public class NoSolid1 {
+public class Order {
     private List<String> items;
     private double totalAmount;
 
-    public NoSolid1(List<String> items) {
+    public Order(List<String> items) {
         this.items = items;
         this.totalAmount = calculateTotal();
     }
