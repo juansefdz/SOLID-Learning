@@ -15,24 +15,6 @@ public class Order {
     public double getTotalAmount() {
         return totalAmount;
     }
-    public class CalculateTotal {
-        private double calculateTotal() {
-            // Lógica para calcular el total de la orden
-            return 100;
-        }
-    }
-    public class OrderPrinter {
-        public void printOrder() {
-            // Lógica para imprimir la orden
-        }
-    
-    }
-    public class SaveToDatabase {
-        public void saveToDatabase (){
-            // Lógica para guardar la orden en la base de datos
-    
-        }
-    
-    }
+   
     
 }
