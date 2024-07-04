@@ -1,4 +1,4 @@
-# SOLID-Learning-riwi
+# SOLID-Learning
 
 # Principios SOLID
 
